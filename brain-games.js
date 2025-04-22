@@ -1,3 +1,3 @@
-
 #!/usr/bin/env node
-console.log('Welcome to Brain Games!');
+/* eslint-env node */
+console.log('Welcome to Brain Games!')

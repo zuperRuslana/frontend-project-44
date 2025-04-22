@@ -4,7 +4,9 @@
   "description": "[![Actions Status](https://github.com/zuperRuslana/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zuperRuslana/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint .",
+    "sonar": "sonar-scanner"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,24 @@
   },
   "homepage": "https://github.com/zuperRuslana/frontend-project-44#readme",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "debug": "^4.4.0",
+    "es-toolkit": "^1.32.0",
+    "jiti": "^2.4.2",
+    "vitest": "^3.0.7"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "eslint": "^9.25.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^16.0.0",
+    "sonar-scanner": "^3.1.0",
+    "typescript": "^5.8.3"
   }
 }
