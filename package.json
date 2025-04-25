@@ -15,7 +15,8 @@
   "author": "",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "license": "ISC",
   "bugs": {
@@ -26,6 +27,7 @@
     "debug": "^4.4.0",
     "es-toolkit": "^1.32.0",
     "jiti": "^2.4.2",
+    "readline-sync": "^1.4.10",
     "vitest": "^3.0.7"
   },
   "lint-staged": {
