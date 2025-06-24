@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import getName from './cli.js';
-import { getRandomInt, evenOrOdd } from './even.js';
+import { getRandomInt} from './even.js';
 
 function generateOperator(){
 const operators=['+','-','*'];
