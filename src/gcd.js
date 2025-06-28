@@ -9,8 +9,8 @@ function biggestDevisor(){
     let correctCount=0;
     while(correctCount < 3){
 
-    let num1= getRandomInt(0,100);
-    let num2= getRandomInt(0,100);
+    let num1= getRandomInt(1,100);
+    let num2= getRandomInt(1,100);
 
     console.log(`Question: ${num1} ${num2}`);
 
