@@ -11,9 +11,13 @@ console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     const number= getRandomInt(1,100);
     const correctAnswer= primeOrNot(number);
     console.log(`Question: ${number}`);
-    primeOrNot(number);
+    
+    let answer = readlineSync.question('Your answer: ').toLowerCase();
 
-    let answer = (readlineSync.question('Your answer: '));
+    while (answer !== 'yes' && answer !== 'no') {
+     console.log('Please answer "yes" or "no".');
+    answer = readlineSync.question('Your answer: ').toLowerCase();
+}
         if (answer === correctAnswer){
             console.log(`Your answer: "${answer}"`)
             console.log("Correct!");
