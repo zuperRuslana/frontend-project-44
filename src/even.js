@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 import getName from './cli.js';
 
-export function getRandomInt(min, max) {
+export const getRandomInt=(min, max)=> {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 const evenCheck = (number) => number % 2 === 0;
 
-export function evenOrOdd () {
+ function evenOrOdd () {
    const name = getName();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');  
 let correctAnswer = 0;
@@ -32,4 +32,4 @@ let correctAnswer = 0;
     console.log(`Congratulations, ${name}!`);
   }
 };
-
+export default evenOrOdd;
