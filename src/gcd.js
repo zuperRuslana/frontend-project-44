@@ -26,11 +26,9 @@ function biggestDevisor(){
     const correctAnswer = smallerNum;
     let answer = Number(readlineSync.question('Your answer: '));
     if (answer === correctAnswer){
-        console.log(`Your answer: "${answer}"`)
         console.log("Correct!");
         correctCount+=1;
     }else{
-        console.log(`Your answer: "${answer}"`);
           console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
            console.log( `Let's try again, ${name}!`);
            correctCount = 0;
