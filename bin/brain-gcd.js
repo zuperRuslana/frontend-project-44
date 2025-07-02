@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import biggestDevisor from '../src/gcd.js';
+import biggestDevisor from '../src/gcd.js'
 
-biggestDevisor();
+biggestDevisor()
