@@ -41,7 +41,7 @@ export default function progression(){
            correctCount = 0;
     }
 }
-console.log(`Congratulations, ${name}`);
+console.log(`Congratulations, ${name}!`);
     
 };
 
