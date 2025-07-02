@@ -36,7 +36,7 @@ function biggestDevisor(){
            correctCount = 0;
     }
 }
-console.log(`Congratulations, ${name}`);
+console.log(`Congratulations, ${name}!`);
     
 };
 export default biggestDevisor;
