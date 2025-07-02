@@ -5,7 +5,7 @@ import { getRandomInt} from './even.js';
 
 function generateOperator(){
 const operators=['+','-','*'];
-let index= getRandomInt(0,3);
+let index= getRandomInt(0,2);
 return operators[index]; 
 };
 
