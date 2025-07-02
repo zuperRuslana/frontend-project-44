@@ -29,7 +29,7 @@ console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
                correctCount = 0;
         }
     }
-    console.log(`Congratulations, ${name}`!);
+    console.log(`Congratulations, ${name}!`);
 };
 
 export  function primeOrNot (number){
