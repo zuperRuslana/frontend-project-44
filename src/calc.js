@@ -49,7 +49,7 @@ console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer
 return;
 		}
 	}
-console.log(`Congratulations, ${name}!`);
+	console.log(`Congratulations, ${name}!`);
 
 };
 
