@@ -39,6 +39,7 @@ export default function progression(){
           console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
            console.log( `Let's try again, ${name}!`);
            correctCount = 0;
+           return;
     }
 }
 console.log(`Congratulations, ${name}!`);
