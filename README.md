@@ -10,7 +10,7 @@ A collection of terminal-based math games.
 ### brain-even
 Answer "yes" if the number is even, otherwise "no".
 
-[![asciicast](https://asciinema.org/a/brain-even.svg)](https://asciinema.org/connect/348aae1a-74c6-48f5-8845-c2a264722acc)
+[Demo](https://asciinema.org/a/xgiFkpTXVkIS0g6T)
 
 ### brain-calc
 What is the result of the expression?
