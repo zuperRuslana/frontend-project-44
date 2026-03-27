@@ -24,7 +24,7 @@ const generateRound = () => {
 const primeGuess = () => gameLoop(
   'Answer "yes" if given number is prime. Otherwise answer "no".',
   generateRound,
-  (answer) => answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'no',
+  answer => answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'no',
 )
 
 export default primeGuess
