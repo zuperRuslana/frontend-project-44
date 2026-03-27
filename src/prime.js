@@ -1,40 +1,7 @@
-import readlineSync from 'readline-sync'
-import getName from './cli.js'
-import { getRandomInt } from './even.js'
+import gameLoop from './gameLoop.js'
+import { getRandomInt } from './utils.js'
 
-export default function primeGuess() {
-  const name = getName()
-  let correctCount = 0
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-  while (correctCount < 3) {
-    const number = getRandomInt(1, 100)
-    const correctAnswer = primeOrNot(number)
-    console.log(`Question: ${number}`)
-
-    let answer = readlineSync.question('Your answer: ').toLowerCase()
-
-    while (answer !== 'yes' && answer !== 'no') {
-      console.log('Please answer "yes" or "no".')
-      answer = readlineSync.question('Your answer: ').toLowerCase()
-    }
-    if (answer === correctAnswer) {
-      console.log(`Your answer: "${answer}"`)
-      console.log('Correct!')
-      correctCount += 1
-    }
-    else {
-      console.log(`Your answer: "${answer}"`)
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
-      console.log(`Let's try again, ${name}!`)
-      correctCount = 0
-      return
-    }
-  }
-  console.log(`Congratulations, ${name}!`)
-};
-
-export function primeOrNot(number) {
+export const primeOrNot = (number) => {
   if (number <= 1) {
     return 'no'
   }
@@ -44,4 +11,20 @@ export function primeOrNot(number) {
     }
   }
   return 'yes'
-};
+}
+
+const generateRound = () => {
+  const number = getRandomInt(1, 100)
+  return {
+    question: number,
+    correctAnswer: primeOrNot(number),
+  }
+}
+
+const primeGuess = () => gameLoop(
+  'Answer "yes" if given number is prime. Otherwise answer "no".',
+  generateRound,
+  (answer) => answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'no',
+)
+
+export default primeGuess
